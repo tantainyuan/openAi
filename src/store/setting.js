@@ -12,7 +12,7 @@ export const useSettingStore = defineStore('setting', {
     currentModel: 'gpt-3.5-turbo',
     chatList: [],
     openAiInstance: null,
-    apiKey: import.meta.env.VITE_API_KEY ? import.meta.env.VITE_API_KEY : (Storage.get(ApiKey) || ''),
+    apiKey: import.meta.env.VITE_API_KEY ? import.meta.env.VITE_API_KEY : (Storage.get(ApiKey) || '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'),
 
     modelMap: [
       { label: 'gpt-3.5-turbo', value: 'gpt-3.5-turbo' },
